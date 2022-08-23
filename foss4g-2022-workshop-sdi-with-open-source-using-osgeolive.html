@@ -702,10 +702,20 @@ scripts
         <li>Add your QGIS server WMS to leaflet
     </ul>
     <p>
-        <pre><code class="sql">            
-var countriesAndBoundaries = L.tileLayer.wms('http://geo-spatial.org/geoserver/ows?', {
-layers: 'omc:ro_admin_gr_colegii_sen'
-}).addTo(map);
+        <pre><code class="sql">
+// add new layer from WMS service
+var topo = L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+    layers: 'TOPO-OSM-WMS'
+		}).addTo(map);
+
+// define basemaps
+var baseMaps = {
+    "OpenStreetMap": osm,
+    "OSM Topo": topo
+};
+// Add a layer control button
+var layerControl = L.control.layers(baseMaps).addTo(map);
+
          </code></pre>
     </p>
 </section> 
