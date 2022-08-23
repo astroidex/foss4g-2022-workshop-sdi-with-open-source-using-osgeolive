@@ -32,7 +32,7 @@ body {
 
 .reveal {
   font-family: "Miriam Libre","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: normal;
   color: #000; }
 
@@ -55,10 +55,10 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   color: #003A40;
   font-family: "Miriam Libre","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: normal;
   /*text-transform: uppercase;*/
@@ -66,10 +66,10 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2.1em; }
 
 .reveal h2 {
-  font-size: 1.9em; }
+  font-size: 1.8em; }
 
 .reveal h3 {
   font-size: 1.6em; }

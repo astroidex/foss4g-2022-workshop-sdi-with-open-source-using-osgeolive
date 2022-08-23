@@ -54,7 +54,7 @@
           <!-- Footer center -->
           
           <div class="footC">
-            <footnote>Workshop SDI with OSGeoLive - FOSS4G 2022</footnote>
+            <footnote>Workshop SDI with OSGeoLive - FOSS4G 2022 Firenze Italy</footnote>
             </div>
           </div>  
 
@@ -64,9 +64,9 @@
 <h3>Setting up a Spatial Data Infrastructure (SDI) with Open Source Software using OSGeoLive</h3>
 
 
-    <p><small>Astrid Emde, Angelos Tzotzos, Enock Seth Nyamador, Nicolas Roelandt</small></p>
+    <p><small>Astrid Emde, Enock Seth Nyamador, Nicolas Roelandt, Angelos Tzotzos</small></p>
     <p><small><a href="https://2022.foss4g.org" title="FOSS4G 2022 Firenze">FOSS4G 2022 Firenze Italy</a></small></p>
-<img src="img/foss4g2022/osgeolive_menu.png" height="280">    
+<img src="img/foss4g2022/osgeolive_menu.png" height="380">    
 </section>
 
 <section>
@@ -484,7 +484,7 @@ Update countries set name = 'TEST' WHERE name = 'Italy';
 <section>
 <h2>Service</h2>
     <p>
-        <img src="img/foss4g2022/request_response.png" height="300">           
+        <img src="img/foss4g2022/request_response.png" height="500">           
     </p> 
 <!--
 file system
@@ -582,7 +582,7 @@ scripts
       <ul>  
         <li>Menu → Project → Project properties → OWS Server</li>
         <li>Name and title, extent, layer access (make sure you saved the password for your database access)</li>
-        <li>GetCapabilities-Request <br><small><a href="http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/home/user/service_wms.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/home/user/service_wms.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities</a></small></li></li>
+        <li>GetCapabilities-Request <br><small><a href="http://localhost/cgi-bin/qgis_mapserv.fcgi?MAP=/usr/local/share/qgis/service_wms.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">http://localhost/cgi-bin/qgis_mapserv.fcgi?MAP=/usr/local/share/qgis/service_wms.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities</a></small></li></li>
         
       </ul>
     </p>
@@ -620,7 +620,7 @@ scripts
         <li><small>ISPRA WMS <a href="http://portalesgi.isprambiente.it/lista-servizi-wms/Geological%20Maps" target="_blank">http://portalesgi.isprambiente.it/lista-servizi-wms/Geological%20Maps</a></small></li>
         <li><small>Regione Toscana<a href="https://www.regione.toscana.it/-/geoscopio-wms" target="_blank">https://www.regione.toscana.it/-/geoscopio-wms</a></small></li>
         <li><small>Geoportale Nazionale<a href="http://www.pcn.minambiente.it/mattm/servizio-wms/" target="_blank">http://www.pcn.minambiente.it/mattm/servizio-wms/</a></small></li>
- 
+         <li><small>INSPIRE Geoportal<a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">https://inspire-geoportal.ec.europa.eu/</a></small></li>
       </ul>
     </p>
 </section> 
@@ -650,7 +650,7 @@ scripts
       </ul>
     </p>
     <p>
-        <img src="img/foss4g2022/leaflet.png" height="300">           
+        <img src="img/foss4g2022/leaflet.png" height="400">           
     </p>     
 </section> 
 
@@ -720,7 +720,7 @@ layers: 'omc:ro_admin_gr_colegii_sen'
       </ul>
     </p>
     <p>
-        <img src="img/foss4g2022/mapbender.png" height="300">           
+        <img src="img/foss4g2022/mapbender.png" height="400">           
     </p> 
 </section> 
 
@@ -739,10 +739,14 @@ layers: 'omc:ro_admin_gr_colegii_sen'
     <ul>
         <li>Load your QGIS WMS and some other WMS in Mapbender</br></br></li>
         <li><small><a href="http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities</a></small></br></br></li>
-        <li><small><a href="http://osm-demo.wheregroup.com/service?REQUEST=GetCapabilities&Service=WMS&Version=1.3.0">http://osm-demo.wheregroup.com/service?REQUEST=GetCapabilities&Service=WMS&Version=1.3.0</a></small></br></br></li>
-        <li><small><a href="https://sedac.ciesin.columbia.edu/geoserver/other/wms?service=wms&request=getcapabilities" target="_blank">https://sedac.ciesin.columbia.edu/geoserver/other/wms?service=wms&request=getcapabilities</small></li>
-        <li><small>IDERA Argentina <a href="https://www.idera.gob.ar/index.php?option=com_content&view=article&id=335:geoservicios&catid=33:services&Itemid=302" target="_blank">https://www.idera.gob.ar/index.php?option=com_content&view=article&id=335:geoservicios&catid=33:services&Itemid=302</a></small></li>
- 
+        <li><small><a href="http://osm-demo.wheregroup.com/service?REQUEST=GetCapabilities&Service=WMS&Version=1.3.0">http://osm-demo.wheregroup.com/service?REQUEST=GetCapabilities&Service=WMS&Version=1.3.0</a></small></li>
+        <li>
+        <small><a href="http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities" target="_blank">http://localhost/cgi-bin/qgis_mapserv.fcgi?map=/usr/local/share/qgis/QGIS-NaturalEarth-Example.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities</a></small></br></br></li>
+        <li><small>TopPlus Open <a href="https://sgx.geodatenzentrum.de/wms_topplus_open?request=GetCapabilities&service=wms" target="_blank">https://sgx.geodatenzentrum.de/wms_topplus_open?request=GetCapabilities&service=wms</a></small></li>
+        <li><small>ISPRA WMS <a href="http://portalesgi.isprambiente.it/lista-servizi-wms/Geological%20Maps" target="_blank">http://portalesgi.isprambiente.it/lista-servizi-wms/Geological%20Maps</a></small></li>
+        <li><small>Regione Toscana<a href="https://www.regione.toscana.it/-/geoscopio-wms" target="_blank">https://www.regione.toscana.it/-/geoscopio-wms</a></small></li>
+        <li><small>Geoportale Nazionale<a href="http://www.pcn.minambiente.it/mattm/servizio-wms/" target="_blank">http://www.pcn.minambiente.it/mattm/servizio-wms/</a></small></li>
+         <li><small>INSPIRE Geoportal<a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">https://inspire-geoportal.ec.europa.eu/</a></small></li> 
       </ul>
       </ul>
     </p>
@@ -822,7 +826,7 @@ layers: 'omc:ro_admin_gr_colegii_sen'
       </ul>
     </p>
        <p>
-        <img src="img/foss4g2022/geonode.png" height="250">           
+        <img src="img/foss4g2022/geonode.png" height="450">           
     </p>  
 </section> 
 
