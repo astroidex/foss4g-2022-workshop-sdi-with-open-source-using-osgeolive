@@ -660,19 +660,19 @@ scripts
     <ul> 
         <li>Copy paste leaflet files from /var/www → desktop</li>
         <li>Fix libraries URLs</li>
-        <li>Fix coordinates to Firenze 43.779160 11.249264</li>
+        <li>Fix coordinates to Firenze 43.779 11.249</li>
     </ul>
     <p>
         <pre><code class="sql">
-        var map = L.map('map').setView([11.249264,43.779160], 15);
+        var map = L.map('map').setView([43.779,11.249], 15);
 
         L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{}).addTo(map);
         //In case we are offline, start TileStache to get a base layer
         L.tileLayer('http://localhost:8012/example/{z}/{x}/{y}.png',{}).addTo(map);
 
-        var marker = L.marker([11.249264,43.779160]).addTo(map);            
+        var marker = L.marker([43.779,11.249]).addTo(map);            
 
-        var circle = L.circle([11.249264,43.779160], 250, {
+        var circle = L.circle([43.777,11.242], 250, {
            color: 'red',
            fillColor: '#f03',
            fillOpacity: 0.5
@@ -680,13 +680,13 @@ scripts
         
         
         var polygon = L.polygon([
-           [11.249564,43.774160],
-           [11.249564,43.774160],
-           [11.249964,43.776160]           
+           [43.778,11.252],
+           [43.776,11.258],
+           [43.775,11.250]           
         ]).addTo(map);
         
         var popup = L.popup()
-           .setLatLng([11.249264,43.779160])
+           .setLatLng(43.779,11.249])
            .setContent("FOSS4G 2022 is here this year!")
            .openOn(map);
          </code></pre>
